@@ -3,9 +3,9 @@
 .php_cs.cache
 .phpunit.result.cache
 build
-composer.lock
 coverage
 psalm.xml
 testbench.yaml
 vendor
 .php-cs-fixer.cache
+.phpunit.cache
