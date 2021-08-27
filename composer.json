@@ -1,0 +1,41 @@
+{
+  "name": "phpjuice/pest-plugin-vcr",
+  "description": "Integrates Pest with PHP-VCR",
+  "keywords": [
+    "phpjuice",
+    "pest-plugin-vcr"
+  ],
+  "homepage": "https://github.com/phpjuice/pest-plugin-vcr",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Mohammed",
+      "email": "mohammed@amalyet.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.4|^8.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "PHPJuice\\PestPluginVcr\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PHPJuice\\PestPluginVcr\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
