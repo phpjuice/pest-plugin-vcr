@@ -2,7 +2,10 @@
 
 namespace PHPJuice\PestPluginVcr;
 
-class PestPluginVcr
+trait PestPluginVcr
 {
-    // Build your next great package.
+    public function vcr()
+    {
+      //
+    }
 }
