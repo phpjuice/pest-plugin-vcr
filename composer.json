@@ -16,24 +16,34 @@
     }
   ],
   "require": {
-    "php": "^7.4|^8.0"
+    "php": "^7.4|^8.0",
+    "php-vcr/php-vcr": "^1.5"
   },
   "require-dev": {
+    "ext-curl": "*",
+    "filp/whoops": "^2.9",
+    "pestphp/pest": "^1.17",
     "phpunit/phpunit": "^9.0"
   },
   "autoload": {
     "psr-4": {
       "PHPJuice\\PestPluginVcr\\": "src"
-    }
+    },
+    "files": [
+      "src/PestPluginVcr.php"
+    ]
   },
   "autoload-dev": {
     "psr-4": {
       "PHPJuice\\PestPluginVcr\\Tests\\": "tests"
-    }
+    },
+    "files": [
+      "vendor/filp/whoops/src/Whoops/Util/Misc.php"
+    ]
   },
   "scripts": {
-    "test": "vendor/bin/phpunit",
-    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    "test": "vendor/bin/pest",
+    "test-coverage": "XDEBUG_MODE=coverage vendor/bin/pest --coverage"
   },
   "config": {
     "sort-packages": true

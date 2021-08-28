@@ -1,0 +1,21 @@
+-
+    request:
+        method: GET
+        url: 'https://pestphp.com/'
+        headers:
+            Host: pestphp.com
+    response:
+        status:
+            http_version: '2'
+            code: '200'
+            message: ''
+        headers:
+            server: nginx/1.15.8
+            content-type: 'text/html; charset=UTF-8'
+            vary: Accept-Encoding
+            cache-control: 'no-cache, private'
+            date: 'Sat, 28 Aug 2021 18:33:44 GMT'
+            x-frame-options: SAMEORIGIN
+            x-xss-protection: '1; mode=block'
+            x-content-type-options: nosniff
+        body: "This is a annotation test dummy."

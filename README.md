@@ -2,7 +2,7 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/phpjuice/pest-plugin-vcr.svg?style=flat-square)](https://packagist.org/packages/phpjuice/pest-plugin-vcr)
 [![Total Downloads](https://img.shields.io/packagist/dt/phpjuice/pest-plugin-vcr.svg?style=flat-square)](https://packagist.org/packages/phpjuice/pest-plugin-vcr)
-![GitHub Actions](https://github.com/phpjuice/pest-plugin-vcr/actions/workflows/main.yml/badge.svg)
+![GitHub Actions](https://github.com/phpjuice/pest-plugin-vcr/actions/workflows/ci.yml/badge.svg)
 
 Integrates Pest with PHP-VCR using plugins.
 
@@ -16,12 +16,35 @@ composer require phpjuice/pest-plugin-vcr --dev
 
 ## Usage
 
+To make this plugin functionality available, we need to let Pest know that it should use it. 
+
+We will do this by adding the following to your `Pest.php`:
+
 ```php
 use PHPJuice\PestPluginVcr\PestPluginVcr;
  
 Pest\Plugin::uses(PestPluginVcr::class);
 ```
 
+## Example
+
+The following testsuite, will first send a request to `pestphp.com` and 
+Record your test suite's HTTP interactions into a cassette and replay them 
+during future test runs for fast, deterministic, accurate tests...
+
+```php
+it('records requests to pestphp.com', function () {
+
+    vcrTurnOn('pestphp.com');
+
+    $result = file_get_contents('https://pestphp.com/');
+
+    expect($result)
+        ->toBe('Hello from pestphp.');
+
+    vcrTurnOff();
+});
+```
 ### Testing
 
 ```bash
@@ -38,11 +61,10 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ### Security
 
-If you discover any security related issues, please email mohammed@amalyet.com instead of using the issue tracker.
+If you discover any security related issues, reach out to me @tsd_mohammed instead of using the issue tracker.
 
 ## Credits
 
-- [Mohammed](https://github.com/phpjuice)
 - [All Contributors](../../contributors)
 
 ## License
