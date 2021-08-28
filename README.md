@@ -2,7 +2,7 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/phpjuice/pest-plugin-vcr.svg?style=flat-square)](https://packagist.org/packages/phpjuice/pest-plugin-vcr)
 [![Total Downloads](https://img.shields.io/packagist/dt/phpjuice/pest-plugin-vcr.svg?style=flat-square)](https://packagist.org/packages/phpjuice/pest-plugin-vcr)
-![GitHub Actions](https://github.com/phpjuice/pest-plugin-vcr/actions/workflows/main.yml/badge.svg)
+![GitHub Actions](https://github.com/phpjuice/pest-plugin-vcr/actions/workflows/ci.yml/badge.svg)
 
 Integrates Pest with PHP-VCR using plugins.
 
@@ -42,7 +42,6 @@ If you discover any security related issues, please email mohammed@amalyet.com i
 
 ## Credits
 
-- [Mohammed](https://github.com/phpjuice)
 - [All Contributors](../../contributors)
 
 ## License
