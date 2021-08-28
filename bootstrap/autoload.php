@@ -11,5 +11,5 @@ require __DIR__.'/../vendor/autoload.php';
 
 use VCR\VCR;
 
-VCR::configure()->setCassettePath(__DIR__."/cassettes");
+VCR::configure()->setCassettePath(__DIR__."/../tests/cassettes");
 VCR::turnOn();
