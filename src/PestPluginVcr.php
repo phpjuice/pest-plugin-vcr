@@ -18,8 +18,7 @@ function vcrTurnOn(string $cassetteName)
     }
 
     $root = __DIR__.DIRECTORY_SEPARATOR."..".DIRECTORY_SEPARATOR;
-    VCR::configure()->setCassettePath($root."tests/cassettes")
-        ->enableLibraryHooks(['curl']);
+    VCR::configure()->setCassettePath($root."tests/cassettes");
 
     VCR::turnOn();
     VCR::insertCassette($cassetteName);

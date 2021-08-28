@@ -3,18 +3,19 @@
         method: GET
         url: 'https://pestphp.com/'
         headers:
-            Host: google.com
-            Content-Length: 0
+            Host: pestphp.com
     response:
-        status: 301
+        status:
+            http_version: '2'
+            code: '200'
+            message: ''
         headers:
-            Location: 'https://pestphp.com/'
-            Content-Type: 'text/html; charset=UTF-8'
-            Date: 'Wed, 15 May 2013 04:12:48 GMT'
-            Expires: 'Fri, 14 Jun 2013 04:12:48 GMT'
-            Cache-Control: 'public, max-age=2592000'
-            Server: gws
-            Content-Length: '219'
-            X-XSS-Protection: '1; mode=block'
-            X-Frame-Options: SAMEORIGIN
+            server: nginx/1.15.8
+            content-type: 'text/html; charset=UTF-8'
+            vary: Accept-Encoding
+            cache-control: 'no-cache, private'
+            date: 'Sat, 28 Aug 2021 18:33:44 GMT'
+            x-frame-options: SAMEORIGIN
+            x-xss-protection: '1; mode=block'
+            x-content-type-options: nosniff
         body: "This is a annotation test dummy."
