@@ -1,8 +1,10 @@
 # Pest plugin for PHP-VCR
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/phpjuice/pest-plugin-vcr.svg?style=flat-square)](https://packagist.org/packages/phpjuice/pest-plugin-vcr)
-[![Total Downloads](https://img.shields.io/packagist/dt/phpjuice/pest-plugin-vcr.svg?style=flat-square)](https://packagist.org/packages/phpjuice/pest-plugin-vcr)
 ![GitHub Actions](https://github.com/phpjuice/pest-plugin-vcr/actions/workflows/ci.yml/badge.svg)
+[![Latest Stable Version](http://poser.pugx.org/phpjuice/pest-plugin-vcr/v)](https://packagist.org/packages/phpjuice/pest-plugin-vcr) 
+[![Total Downloads](http://poser.pugx.org/phpjuice/pest-plugin-vcr/downloads)](https://packagist.org/packages/phpjuice/pest-plugin-vcr) 
+[![License](http://poser.pugx.org/phpjuice/pest-plugin-vcr/license)](https://packagist.org/packages/phpjuice/pest-plugin-vcr)
+
 
 Integrates Pest with PHP-VCR using plugins.
 
@@ -74,3 +76,8 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 ## PHP Package Boilerplate
 
 This package was generated using the [PHP Package Boilerplate](https://laravelpackageboilerplate.com) by [Beyond Code](http://beyondco.de/).
+
+![GitHub Actions](https://github.com/phpjuice/pest-plugin-vcr/actions/workflows/ci.yml/badge.svg)
+[![Latest Stable Version](http://poser.pugx.org/phpjuice/pest-plugin-vcr/v)](https://packagist.org/packages/phpjuice/pest-plugin-vcr) 
+[![Total Downloads](http://poser.pugx.org/phpjuice/pest-plugin-vcr/downloads)](https://packagist.org/packages/phpjuice/pest-plugin-vcr) 
+[![License](http://poser.pugx.org/phpjuice/pest-plugin-vcr/license)](https://packagist.org/packages/phpjuice/pest-plugin-vcr)
