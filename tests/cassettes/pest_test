@@ -1,0 +1,20 @@
+-
+    request:
+        method: GET
+        url: 'https://pestphp.com/'
+        headers:
+            Host: google.com
+            Content-Length: 0
+    response:
+        status: 301
+        headers:
+            Location: 'https://pestphp.com/'
+            Content-Type: 'text/html; charset=UTF-8'
+            Date: 'Wed, 15 May 2013 04:12:48 GMT'
+            Expires: 'Fri, 14 Jun 2013 04:12:48 GMT'
+            Cache-Control: 'public, max-age=2592000'
+            Server: gws
+            Content-Length: '219'
+            X-XSS-Protection: '1; mode=block'
+            X-Frame-Options: SAMEORIGIN
+        body: "This is a annotation test dummy."

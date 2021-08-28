@@ -21,12 +21,16 @@
   },
   "require-dev": {
     "pestphp/pest": "^1.17",
-    "phpunit/phpunit": "^9.0"
+    "phpunit/phpunit": "^9.0",
+    "ext-curl": "*"
   },
   "autoload": {
     "psr-4": {
       "PHPJuice\\PestPluginVcr\\": "src"
-    }
+    },
+    "files": [
+      "src/PestPluginVcr.php"
+    ]
   },
   "autoload-dev": {
     "psr-4": {
