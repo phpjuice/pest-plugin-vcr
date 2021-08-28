@@ -2,6 +2,6 @@
 
 All notable changes to `pest-plugin-vcr` will be documented in this file
 
-## 1.0.0 - 2021-08-30
+## 1.0.0 - 2021-08-29
 
 - initial release
