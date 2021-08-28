@@ -16,12 +16,35 @@ composer require phpjuice/pest-plugin-vcr --dev
 
 ## Usage
 
+To make this plugin functionality available, we need to let Pest know that it should use it. 
+
+We will do this by adding the following to your `Pest.php`:
+
 ```php
 use PHPJuice\PestPluginVcr\PestPluginVcr;
  
 Pest\Plugin::uses(PestPluginVcr::class);
 ```
 
+## Example
+
+The following testsuite, will first send a request to `pestphp.com` and 
+Record your test suite's HTTP interactions into a cassette and replay them 
+during future test runs for fast, deterministic, accurate tests...
+
+```php
+it('records requests to pestphp.com', function () {
+
+    vcrTurnOn('pestphp.com');
+
+    $result = file_get_contents('https://pestphp.com/');
+
+    expect($result)
+        ->toBe('Hello from pestphp.');
+
+    vcrTurnOff();
+});
+```
 ### Testing
 
 ```bash
