@@ -1,14 +1,6 @@
 <?php
 declare(strict_types=1);
 
-namespace PHPJuice\PestPluginVcr\Tests;
-
-use PHPUnit\Framework\TestCase;
-
-final class PestPluginVcrTest extends TestCase
-{
-    public function testAssertsTrue()
-    {
-        $this->assertTrue(true);
-    }
-}
+test('asserts true to be true', function () {
+    expect(true)->toBeTrue();
+});

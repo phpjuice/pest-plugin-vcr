@@ -20,6 +20,7 @@
     "php-vcr/php-vcr": "^1.5"
   },
   "require-dev": {
+    "pestphp/pest": "^1.17",
     "phpunit/phpunit": "^9.0"
   },
   "autoload": {
@@ -33,8 +34,8 @@
     }
   },
   "scripts": {
-    "test": "vendor/bin/phpunit",
-    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    "test": "vendor/bin/pest",
+    "test-coverage": "vendor/bin/pest --coverage-html coverage"
   },
   "config": {
     "sort-packages": true
