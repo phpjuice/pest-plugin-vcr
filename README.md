@@ -1,12 +1,11 @@
 # Pest plugin for PHP-VCR
 
 ![GitHub Actions](https://github.com/phpjuice/pest-plugin-vcr/actions/workflows/ci.yml/badge.svg)
-[![Latest Stable Version](http://poser.pugx.org/phpjuice/pest-plugin-vcr/v)](https://packagist.org/packages/phpjuice/pest-plugin-vcr) 
-[![Total Downloads](http://poser.pugx.org/phpjuice/pest-plugin-vcr/downloads)](https://packagist.org/packages/phpjuice/pest-plugin-vcr) 
+[![Latest Stable Version](http://poser.pugx.org/phpjuice/pest-plugin-vcr/v)](https://packagist.org/packages/phpjuice/pest-plugin-vcr)
+[![Total Downloads](http://poser.pugx.org/phpjuice/pest-plugin-vcr/downloads)](https://packagist.org/packages/phpjuice/pest-plugin-vcr)
 [![License](http://poser.pugx.org/phpjuice/pest-plugin-vcr/license)](https://packagist.org/packages/phpjuice/pest-plugin-vcr)
 
-
-Integrates Pest with PHP-VCR using plugins.
+Integrates Pest with [PHP-VCR](http://php-vcr.github.io) using plugins.
 
 ## Installation
 
@@ -16,10 +15,22 @@ You can install the package via composer:
 composer require phpjuice/pest-plugin-vcr --dev
 ```
 
+## Setup
+
 Add new folder inside tests to store cassettes:
 
 ```bash
 mkdir tests/cassettes
+```
+
+Add the following line to your `Pest.php` file, inorder to instruct
+php vcr of our cassettes folder:
+
+```php
+use VCR\VCR;
+
+
+VCR::configure()->setCassettePath(__DIR__.'/cassettes');
 ```
 
 ## Usage
@@ -40,8 +51,8 @@ it('records requests to pestphp.com', function () {
 });
 ```
 
-The previous testsuite, will first send a request to `pestphp.com` and 
-Record your test suite's HTTP interactions into a cassette and replay them 
+The previous testsuite, will first send a request to `pestphp.com` and
+Record your test suite's HTTP interactions into a cassette and replay them
 during future test runs for fast, deterministic, accurate tests.
 
 > **Important** before running your tests make sure to have the following folder `tests/cassettes`
@@ -77,6 +88,6 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 This package was generated using the [PHP Package Boilerplate](https://laravelpackageboilerplate.com) by [Beyond Code](http://beyondco.de/).
 
 ![GitHub Actions](https://github.com/phpjuice/pest-plugin-vcr/actions/workflows/ci.yml/badge.svg)
-[![Latest Stable Version](http://poser.pugx.org/phpjuice/pest-plugin-vcr/v)](https://packagist.org/packages/phpjuice/pest-plugin-vcr) 
-[![Total Downloads](http://poser.pugx.org/phpjuice/pest-plugin-vcr/downloads)](https://packagist.org/packages/phpjuice/pest-plugin-vcr) 
+[![Latest Stable Version](http://poser.pugx.org/phpjuice/pest-plugin-vcr/v)](https://packagist.org/packages/phpjuice/pest-plugin-vcr)
+[![Total Downloads](http://poser.pugx.org/phpjuice/pest-plugin-vcr/downloads)](https://packagist.org/packages/phpjuice/pest-plugin-vcr)
 [![License](http://poser.pugx.org/phpjuice/pest-plugin-vcr/license)](https://packagist.org/packages/phpjuice/pest-plugin-vcr)

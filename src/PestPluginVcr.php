@@ -17,9 +17,6 @@ function vcrTurnOn(string $cassetteName)
         VCR::configure()->setStorage('json');
     }
 
-    $root = __DIR__.DIRECTORY_SEPARATOR."..".DIRECTORY_SEPARATOR;
-    VCR::configure()->setCassettePath($root."tests/cassettes");
-
     VCR::turnOn();
     VCR::insertCassette($cassetteName);
 }
