@@ -16,23 +16,15 @@ You can install the package via composer:
 composer require phpjuice/pest-plugin-vcr --dev
 ```
 
-## Usage
+Add new folder inside tests to store cassettes:
 
-To make this plugin functionality available, we need to let Pest know that it should use it. 
-
-We will do this by adding the following to your `Pest.php`:
-
-```php
-use PHPJuice\PestPluginVcr\PestPluginVcr;
- 
-Pest\Plugin::uses(PestPluginVcr::class);
+```bash
+mkdir tests/cassettes
 ```
 
-## Example
+## Usage
 
-The following testsuite, will first send a request to `pestphp.com` and 
-Record your test suite's HTTP interactions into a cassette and replay them 
-during future test runs for fast, deterministic, accurate tests...
+This plugin will provide you with two handy functions `vcrTurnOn` & `vcrTurnOff` to turn on and off the http recording :
 
 ```php
 it('records requests to pestphp.com', function () {
@@ -47,6 +39,13 @@ it('records requests to pestphp.com', function () {
     vcrTurnOff();
 });
 ```
+
+The previous testsuite, will first send a request to `pestphp.com` and 
+Record your test suite's HTTP interactions into a cassette and replay them 
+during future test runs for fast, deterministic, accurate tests.
+
+> **Important** before running your tests make sure to have the following folder `tests/cassettes`
+
 ### Testing
 
 ```bash
