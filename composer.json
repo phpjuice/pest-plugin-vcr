@@ -42,7 +42,10 @@
   "autoload-dev": {
     "psr-4": {
       "PHPJuice\\PestPluginVcr\\Tests\\": "tests"
-    }
+    },
+    "files": [
+      "vendor/filp/whoops/src/Whoops/Util/Misc.php"
+    ]
   },
   "scripts": {
     "test": "vendor/bin/pest",
