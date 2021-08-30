@@ -1,6 +1,6 @@
 # Pest plugin for PHP-VCR
 
-![GitHub Actions](https://github.com/phpjuice/pest-plugin-vcr/actions/workflows/ci.yml/badge.svg)
+![Tests](https://github.com/phpjuice/pest-plugin-vcr/actions/workflows/ci.yml/badge.svg)
 [![Latest Stable Version](http://poser.pugx.org/phpjuice/pest-plugin-vcr/v)](https://packagist.org/packages/phpjuice/pest-plugin-vcr)
 [![Total Downloads](http://poser.pugx.org/phpjuice/pest-plugin-vcr/downloads)](https://packagist.org/packages/phpjuice/pest-plugin-vcr)
 [![License](http://poser.pugx.org/phpjuice/pest-plugin-vcr/license)](https://packagist.org/packages/phpjuice/pest-plugin-vcr)
@@ -23,8 +23,8 @@ Add new folder inside tests to store cassettes:
 mkdir tests/cassettes
 ```
 
-Add the following line to your `Pest.php` file, inorder to instruct
-php vcr of our cassettes folder:
+Add the following line to your `Pest.php` file, this will tell
+VCR where to look for `cassettes`:
 
 ```php
 use VCR\VCR;
@@ -73,7 +73,7 @@ Please see [CONTRIBUTING](../CONTRIBUTING.md) for details.
 
 ### Security
 
-If you discover any security related issues, reach out to me @tsd_mohammed instead of using the issue tracker.
+If you discover any security related issues, send us an email to phpjuice@gmail.com instead of using the issue tracker.
 
 ## Credits
 
@@ -87,7 +87,7 @@ The MIT License (MIT). Please see [License File](../LICENSE.md) for more informa
 
 This package was generated using the [PHP Package Boilerplate](https://laravelpackageboilerplate.com) by [Beyond Code](http://beyondco.de/).
 
-![GitHub Actions](https://github.com/phpjuice/pest-plugin-vcr/actions/workflows/ci.yml/badge.svg)
+![Tests](https://github.com/phpjuice/pest-plugin-vcr/actions/workflows/ci.yml/badge.svg)
 [![Latest Stable Version](http://poser.pugx.org/phpjuice/pest-plugin-vcr/v)](https://packagist.org/packages/phpjuice/pest-plugin-vcr)
 [![Total Downloads](http://poser.pugx.org/phpjuice/pest-plugin-vcr/downloads)](https://packagist.org/packages/phpjuice/pest-plugin-vcr)
 [![License](http://poser.pugx.org/phpjuice/pest-plugin-vcr/license)](https://packagist.org/packages/phpjuice/pest-plugin-vcr)
