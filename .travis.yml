@@ -18,4 +18,4 @@ script:
 # Monitor only these branches
 branches:
   only:
-    - master
+    - main
