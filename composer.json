@@ -15,9 +15,15 @@
       "role": "Developer"
     }
   ],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/phpjuice/php-vcr"
+    }
+  ],
   "require": {
     "php": "^7.4|^8.0",
-    "php-vcr/php-vcr": "^1.5"
+    "php-vcr/php-vcr": "dev-master as 1.5"
   },
   "require-dev": {
     "ext-curl": "*",
@@ -36,10 +42,7 @@
   "autoload-dev": {
     "psr-4": {
       "PHPJuice\\PestPluginVcr\\Tests\\": "tests"
-    },
-    "files": [
-      "vendor/filp/whoops/src/Whoops/Util/Misc.php"
-    ]
+    }
   },
   "scripts": {
     "test": "vendor/bin/pest",
