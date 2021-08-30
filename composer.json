@@ -15,9 +15,15 @@
       "role": "Developer"
     }
   ],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/phpjuice/php-vcr"
+    }
+  ],
   "require": {
     "php": "^7.4|^8.0",
-    "php-vcr/php-vcr": "^1.5"
+    "php-vcr/php-vcr": "dev-master as 1.5"
   },
   "require-dev": {
     "ext-curl": "*",
